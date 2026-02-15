@@ -1,8 +1,9 @@
 name: build_wheel_publish
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - master
 
 jobs:
   build_linux_x86:
