@@ -110,6 +110,16 @@ if os.name != "posix":  # Windows
                 root=ROOT, usr=USR + "/x86_64-w64-mingw32"
             )
         )
+    if os.path.exists(
+        convert_path("{root}/{usr}/lib/libmingw32.a".format(root=ROOT, usr=USR))
+    ):
+        EXTRALINK_ARGS.append("{root}/{usr}/lib/libmingw32.a".format(root=ROOT, usr=USR))
+    else:  # best effort guess
+        EXTRALINK_ARGS.append(
+            "{root}/{usr}/lib/libmingw32.a".format(
+                root=ROOT, usr=USR + "/x86_64-w64-mingw32"
+            )
+        )
     with open(
         convert_path("{root}/tmp/nfstream_build/gcc_version.in".format(root=ROOT))
     ) as gcc_version_in:
