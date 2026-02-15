@@ -32,7 +32,8 @@ build_libndpi() {
   cd nDPI
   ./autogen.sh
   # nDPI 5.0: Build only the library, not example applications (--with-only-libndpi)
-  ./configure --with-only-libndpi && make
+  # Disable global context to avoid pthread dependency (MinGW pthread not linkable by MSVC)
+  ./configure --with-only-libndpi --disable-global-context-support && make
   make DESTDIR=/tmp/nfstream_build install
   cd ..
   echo "---------------------------------------------------------------------------------------------------------------"
