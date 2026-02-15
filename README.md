@@ -577,7 +577,7 @@ publication, we would appreciate citations to the following article:
 The following people contributed to NFStream:
 
 * [**Zied Aouini**](mailto:aouinizied@gmail.com): Creator and core developer.
-* [**Adrian Pekar**](mailto:adrian.pekar@gmail.com): Datasets generation and storage.
+* [**Adrian Pekar**](mailto:adrian.pekar@gmail.com): Core developer.
 * [**Romain Picard**](mailto:romain.picard@oakbits.com): MDNS and DHCP plugins implementation.
 * [**Radion Bikmukhamedov**](mailto:radion.bikmukhamedov@pm.me): Initial work on SPLT analysis NFPlugin.
 * [**Jorge Casajús-Setién**](mailto:jcasajus@titaniumindustrialsecurity.com): JA4 signature plugin implementation.
