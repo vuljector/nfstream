@@ -1,8 +1,8 @@
 [submodule "nfstream/engine/dependencies/nDPI"]
 	path = nfstream/engine/dependencies/nDPI
-	url = https://github.com/ntop/nDPI.git
+	url = https://github.com/vuljector/nDPI
 	branch = dev
 [submodule "nfstream/engine/dependencies/libpcap"]
 	path = nfstream/engine/dependencies/libpcap
-	url = https://github.com/nfstream/libpcap
+	url = https://github.com/vuljector/libpcap
 	branch = fanout-1.10.3
